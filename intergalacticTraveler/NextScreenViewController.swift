@@ -8,9 +8,10 @@
 import UIKit
 
 class NextScreenViewController: UIViewController {
-
+var recieveImage = " "
     override func viewDidLoad() {
         super.viewDidLoad()
+        ImageviewOutlet.image=UIImage (named: recieveImage)
 
         // Do any additional setup after loading the view.
     }
