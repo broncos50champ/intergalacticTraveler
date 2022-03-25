@@ -35,9 +35,18 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
-    }
-  
+        let nextViewController = segue.destination as! NextScreenViewController
+        
+        var randomNumber = Int.random(in:1...3)
+        
+        if segue.identifier == "redScreen"
+        {
+            nextViewController.recieveImage = "red star\(randomNumber)"
+        }
+        else
+        {
+            nextViewController.recieveImage = "blue star\(randomNumber)"}
 
 }
 
+}
